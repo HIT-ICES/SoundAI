@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: SoundAI
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${REGISTRY_IP}:${REGISTRY_PORT}/eureka
